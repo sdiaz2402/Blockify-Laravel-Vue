@@ -1,0 +1,35 @@
+/**
+ * Customized version of bootstrap using variables from _variables.scss.
+ * This file is loaded via separate loader thus allowing to use original bootstrap classes (e.g. .btn-default) through out the app.
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body{
+        @apply bg-block-black
+    }
+    div {
+        @apply text-block-white
+    }
+    h1 {
+        @apply text-block-white
+    }
+    h2 {
+        @apply text-block-white
+    }
+    label {
+        @apply text-block-white
+    }
+    input {
+        @apply appearance-none block px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-block-white text-block-black
+    }
+    button{
+
+    }
+    /* ... */
+  }
